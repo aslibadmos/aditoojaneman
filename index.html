@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man jao na bby</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Gif -->
+        <img src="assets/images/aditi.JPG" id="togepi-gif" alt="picture of togepi"/>
+        <!-- Question -->
+        <h1 id="message">
+        Do you love me.?
+        </h1>
+    </div>
+        <!-- Buttons -->
+        <div class="btn-container">
+            <button id="yes-btn"  onclick="window.location.href='yay.html'">Yes</button>
+            <button id="no-btn" onclick="playMusic()">No</button>
+             
+
+            <audio id="bgMusic" loop>
+                <source src="assets/backgroundmusic.mp3" type="audio/mpeg">
+                
+            </audio>
+
+            <script>
+                function playMusic() {
+                const music = document.getElementById('bgMusic');
+                music.play();
+                }
+            </script>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
